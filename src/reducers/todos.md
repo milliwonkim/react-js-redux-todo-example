@@ -1,0 +1,17 @@
+- ./src/reducers/todos.js
+  - const todos = (state = [], action) => {} : initialState를 꼭 정의해야함
+    - switch(action.type) => action의 type에 따라 다르게 실행됨
+      - case 'ADD_TODO'
+        - return []
+          - ...state
+          - {}
+            - id: action.id
+            - text: action.text
+            - completed: false
+      - case 'TOGGLE_TODO'
+        - return state.map(todo => ())
+          - todo.id === action.id ? => 현재 TOGGLE_TODO의 todo.id와 ADD_TODO인 action.id가 같을때(즉, 그것을 실행시켰을때 혹은 클릭했을때)
+            - {...todo, completed: !todo.completed}
+            - : todo
+      - default
+        - return state

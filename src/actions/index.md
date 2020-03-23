@@ -1,0 +1,16 @@
+- ./src/actions/index.js
+  - nextTodoId = 0로 정의
+  - export const addTodo = (text) => {}
+    - type: 'ADD_TODO'
+    - id: nextTodoId++ => addTodo를 부를수록 1씩 늘어남
+    - text => payload : 왜냐하면 함수 부를때 argument로 불려졌음
+  - export const setVisibilityFilter = (filter) => {}
+    - type: 'SET_VISIBILITY_FILTER'
+    - filter => payload
+  - export const toggleTodo = (id) => ({})
+    - type: 'TOGGLE_TODO'
+    - id => payload
+  - export const VisibilityFilters = {} => Show 필터를 위해 적어놓음
+    - SHOW_ALL: 'SHOW_ALL'
+    - SHOW_COMPLETED: 'SHOW_COMPLETED'
+    - SHOW_ACTIVE: 'SHOW_ACTIVE'

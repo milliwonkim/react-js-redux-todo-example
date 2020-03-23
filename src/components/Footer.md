@@ -1,0 +1,10 @@
+- ./src/components/Footer
+  - import
+    - React from 'react';
+    - FilterLink from '../containers/FilterLink';
+    - { VisibilityFilters } from '../actions';
+  - Footer = () => {} : 모든일, 현재하는일, 완성한일을 필터링해줌
+    - span => Show
+      - <FilterLink filter={VisibilityFilters.SHOW_ALL}> : All => action으로 필터링
+      - <FilterLink filter={VisibilityFilters.SHOW_ACTIVE}> : Active
+      - <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}> : Completed

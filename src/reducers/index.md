@@ -1,0 +1,6 @@
+- ./src/reducers/index.js
+  - import
+    - { combineReducers } from 'redux';
+    - todos from './todos';
+    - visibilityFilter from './visibilityFilter';
+  - export default combineReducers({}) : todos reducer와 visibilityFilter reducer를 하나의 reducer로 합치기

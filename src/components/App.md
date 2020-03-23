@@ -1,0 +1,9 @@
+- ./src/components/App.js
+  - import
+    - Footer from './Footer;
+    - AddTodo from '../containers/AddTodo';
+    - VisibleTodoList from '../containers/VisibleTodoList';
+  - App = () => {}
+    - <AddTodo />
+    - <VisibleTodoList />
+    - <Footer />
